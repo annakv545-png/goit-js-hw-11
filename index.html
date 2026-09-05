@@ -4,125 +4,135 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Vanilla App Template</title>
     <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/styles-DvPDDfy5.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-B4VkUtbg.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-CkrijJv3.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/goit-js-hw-11/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <form class="form">
+      <input
+        type="text"
+        name="search-text"
+        placeholder="Search images..."
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
 
+    <span class="loader is-hidden"></span>
+    <div class="container">
+      <ul class="gallery">
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card1.png">
+      <img class="gallery-image" src="/goit-js-hw-11/assets/card1-BhDUwZRz.png" alt="Card 1" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>1813</span></p>
+      <p class="info-item"><b>Views</b><span>900290</span></p>
+      <p class="info-item"><b>Comments</b><span>229</span></p>
+      <p class="info-item"><b>Downloads</b><span>610937</span></p>
+    </div> -->
+  </li>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/goit-js-hw-11/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card2.png">
+      <img class="gallery-image" src="/goit-js-hw-11/assets/card2-BDFb4-PZ.png" alt="Card 2" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>2582</span></p>
+      <p class="info-item"><b>Views</b><span>1371087</span></p>
+      <p class="info-item"><b>Comments</b><span>400</span></p>
+      <p class="info-item"><b>Downloads</b><span>815874</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card3.png">
+      <img class="gallery-image" src="/goit-js-hw-11/assets/card3-4PlrAQZ0.png" alt="Card 3" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>2396</span></p>
+      <p class="info-item"><b>Views</b><span>1202275</span></p>
+      <p class="info-item"><b>Comments</b><span>458</span></p>
+      <p class="info-item"><b>Downloads</b><span>830385</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card4.png">
+      <img class="gallery-image" src="/goit-js-hw-11/assets/card4-DjyJRzb3.png" alt="Card 4" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>2267</span></p>
+      <p class="info-item"><b>Views</b><span>1617513</span></p>
+      <p class="info-item"><b>Comments</b><span>297</span></p>
+      <p class="info-item"><b>Downloads</b><span>1037636</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card5.png">
+      <img class="gallery-image" src="/goit-js-hw-11/assets/card5-C9e8ocYe.png" alt="Card 5" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>2173</span></p>
+      <p class="info-item"><b>Views</b><span>1120266</span></p>
+      <p class="info-item"><b>Comments</b><span>375</span></p>
+      <p class="info-item"><b>Downloads</b><span>694063</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card6.png">
+      <img class="gallery-image" src="/goit-js-hw-11/assets/card6-BD6eZx4Y.png" alt="Card 6" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>1813</span></p>
+      <p class="info-item"><b>Views</b><span>900290</span></p>
+      <p class="info-item"><b>Comments</b><span>229</span></p>
+      <p class="info-item"><b>Downloads</b><span>610937</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card7.png">
+      <img class="gallery-image" src="/goit-js-hw-11/assets/card7-B7n9q6Yp.png" alt="Card 7" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>1858</span></p>
+      <p class="info-item"><b>Views</b><span>1040022</span></p>
+      <p class="info-item"><b>Comments</b><span>256</span></p>
+      <p class="info-item"><b>Downloads</b><span>554771</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card8.png">
+      <img class="gallery-image" src="/goit-js-hw-11/assets/card8-_FVaez9f.png" alt="Card 8" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>1786</span></p>
+      <p class="info-item"><b>Views</b><span>1077424</span></p>
+      <p class="info-item"><b>Comments</b><span>250</span></p>
+      <p class="info-item"><b>Downloads</b><span>715856</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card9.png">
+      <img class="gallery-image" src="/goit-js-hw-11/assets/card9-CrcUzjNQ.png" alt="Card 9" />
+    </a>
+    <div class="info">
+      <!-- <p class="info-item"><b>Likes</b><span>1826</span></p>
+      <p class="info-item"><b>Views</b><span>768859</span></p>
+      <p class="info-item"><b>Comments</b><span>319</span></p>
+      <p class="info-item"><b>Downloads</b><span>462787</span></p> -->
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
-
+  </li>
+</ul>
+    </div>
+
   </body>
 </html>
