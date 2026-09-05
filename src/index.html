@@ -8,15 +8,128 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <form class="form">
+      <input
+        type="text"
+        name="search-text"
+        placeholder="Search images..."
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+    <span class="loader is-hidden"></span>
+    <div class="container">
+      <ul class="gallery">
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card1.png">
+      <img class="gallery-image" src="./img/card1.png" alt="Card 1" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>1813</span></p>
+      <p class="info-item"><b>Views</b><span>900290</span></p>
+      <p class="info-item"><b>Comments</b><span>229</span></p>
+      <p class="info-item"><b>Downloads</b><span>610937</span></p>
+    </div> -->
+  </li>
 
-    <load src="./partials/footer.html" />
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card2.png">
+      <img class="gallery-image" src="./img/card2.png" alt="Card 2" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>2582</span></p>
+      <p class="info-item"><b>Views</b><span>1371087</span></p>
+      <p class="info-item"><b>Comments</b><span>400</span></p>
+      <p class="info-item"><b>Downloads</b><span>815874</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card3.png">
+      <img class="gallery-image" src="./img/card3.png" alt="Card 3" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>2396</span></p>
+      <p class="info-item"><b>Views</b><span>1202275</span></p>
+      <p class="info-item"><b>Comments</b><span>458</span></p>
+      <p class="info-item"><b>Downloads</b><span>830385</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card4.png">
+      <img class="gallery-image" src="./img/card4.png" alt="Card 4" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>2267</span></p>
+      <p class="info-item"><b>Views</b><span>1617513</span></p>
+      <p class="info-item"><b>Comments</b><span>297</span></p>
+      <p class="info-item"><b>Downloads</b><span>1037636</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card5.png">
+      <img class="gallery-image" src="./img/card5.png" alt="Card 5" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>2173</span></p>
+      <p class="info-item"><b>Views</b><span>1120266</span></p>
+      <p class="info-item"><b>Comments</b><span>375</span></p>
+      <p class="info-item"><b>Downloads</b><span>694063</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card6.png">
+      <img class="gallery-image" src="./img/card6.png" alt="Card 6" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>1813</span></p>
+      <p class="info-item"><b>Views</b><span>900290</span></p>
+      <p class="info-item"><b>Comments</b><span>229</span></p>
+      <p class="info-item"><b>Downloads</b><span>610937</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card7.png">
+      <img class="gallery-image" src="./img/card7.png" alt="Card 7" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>1858</span></p>
+      <p class="info-item"><b>Views</b><span>1040022</span></p>
+      <p class="info-item"><b>Comments</b><span>256</span></p>
+      <p class="info-item"><b>Downloads</b><span>554771</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card8.png">
+      <img class="gallery-image" src="./img/card8.png" alt="Card 8" />
+    </a>
+    <!-- <div class="info">
+      <p class="info-item"><b>Likes</b><span>1786</span></p>
+      <p class="info-item"><b>Views</b><span>1077424</span></p>
+      <p class="info-item"><b>Comments</b><span>250</span></p>
+      <p class="info-item"><b>Downloads</b><span>715856</span></p>
+    </div> -->
+  </li>
+
+  <li class="gallery-item">
+    <a class="gallery-link" href="./img/card9.png">
+      <img class="gallery-image" src="./img/card9.png" alt="Card 9" />
+    </a>
+    <div class="info">
+      <!-- <p class="info-item"><b>Likes</b><span>1826</span></p>
+      <p class="info-item"><b>Views</b><span>768859</span></p>
+      <p class="info-item"><b>Comments</b><span>319</span></p>
+      <p class="info-item"><b>Downloads</b><span>462787</span></p> -->
+    </div>
+  </li>
+</ul>
+    </div>
 
     <script type="module" src="./main.js"></script>
   </body>
