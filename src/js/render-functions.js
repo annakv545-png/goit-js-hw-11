@@ -4,7 +4,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 const galleryElement = document.querySelector('.gallery');
 const loaderElement = document.querySelector('.loader');
 
-const lightbox = new SimpleLightbox('.gallery a', {
+let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
@@ -23,22 +23,33 @@ export function createGallery(images) {
           <p class="info-item"><b>Comments</b><span>${comments}</span></p>
           <p class="info-item"><b>Downloads</b><span>${downloads}</span></p>
         </div>
-      </li>`
+      </li>
+    `
     )
     .join('');
 
+
+  clearGallery();
+
   galleryElement.insertAdjacentHTML('beforeend', markup);
+
   lightbox.refresh();
 }
 
 export function clearGallery() {
-  galleryElement.innerHTML = '';
+  if (galleryElement) {
+    galleryElement.innerHTML = '';
+  }
 }
 
 export function showLoader() {
-  loaderElement.classList.remove('is-hidden');
+  if (loaderElement) {
+    loaderElement.classList.remove('is-hidden');
+  }
 }
 
 export function hideLoader() {
-  loaderElement.classList.add('is-hidden');
+  if (loaderElement) {
+    loaderElement.classList.add('is-hidden');
+  }
 }
